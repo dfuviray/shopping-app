@@ -19,6 +19,33 @@ section {
   margin: 0 auto;
 }
 
+/* SECTION ------------ */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgba(0, 0, 0, 0.65);
+  margin: 0;
+  padding: 0;
+}
+
+/* BUTTON ------------ */
+button {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.7rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 0.2rem;
+  outline: none;
+  transition: transform 0.5s, background 0.3s;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
 /* LOGO ------------ */
 .logo {
   display: flex;
@@ -46,6 +73,7 @@ section {
   background-image: url("img/shopping-stats-bg.svg");
   height: 12rem;
   background-position: center;
+  margin-bottom: 2rem;
 }
 
 .stats {
@@ -67,6 +95,7 @@ section {
 .stats__value {
   font-size: 5rem;
   font-weight: 300;
+  color: #fff;
 }
 
 .stats__value span {
@@ -74,7 +103,30 @@ section {
 }
 
 /* SHOPPING ITEMS SECTION ------------ */
-.shopping-item__button-container {
+.shopping-item__heading-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.shopping-item__button {
+  background-color: #be2edd;
+  color: #fff;
+  border-color: #be2edd;
+  position: relative;
+  bottom: 0.4rem;
+}
+
+.shopping-item__button:hover {
+  background-color: #9807b8;
+}
+
+.shopping-item__button:active {
+  background-color: #8800a6;
+}
+
+.shopping-item__title {
+  font-size: 3.1rem;
+  font-weight: 300;
+  margin-right: 2rem;
 }
