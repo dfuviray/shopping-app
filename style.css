@@ -12,3 +12,22 @@ body {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
+
+/* LOGO ------------ */
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo__image {
+  height: 7rem;
+  width: auto;
+}
+
+.logo__text {
+  color: #000;
+  opacity: 0.75;
+  font-size: 3.4rem;
+  font-weight: 300;
+}
