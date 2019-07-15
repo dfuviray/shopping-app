@@ -15,7 +15,7 @@ body {
 
 /* SECTION ------------ */
 section {
-  max-width: 1140px;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -41,6 +41,8 @@ section {
 
 /* STATS SECTION ------------ */
 .stats-section {
+  max-width: 100%;
+  padding: 0 7%;
   background-image: url("img/shopping-stats-bg.svg");
   height: 12rem;
   background-position: center;
@@ -69,4 +71,10 @@ section {
 
 .stats__value span {
   font-size: 1.87rem;
+}
+
+/* SHOPPING ITEMS SECTION ------------ */
+.shopping-item__button-container {
+  display: flex;
+  justify-content: flex-end;
 }
