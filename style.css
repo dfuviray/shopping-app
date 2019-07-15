@@ -107,6 +107,7 @@ button:active {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  margin-bottom: 2rem;
 }
 
 .shopping-item__button {
@@ -129,4 +130,52 @@ button:active {
   font-size: 3.1rem;
   font-weight: 300;
   margin-right: 2rem;
+}
+
+/* SHOPPING ITEMS ------------ */
+.items {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(190, 46, 221, 0.2);
+  font-size: 1.6rem;
+}
+
+.items ul li:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(190, 46, 221, 0.85);
+}
+
+.item-description {
+  flex-basis: 55%;
+  padding: 0.5rem;
+  /* border: 1px solid; */
+}
+
+.item-quantity {
+  flex-basis: 15%;
+  padding: 0.5rem;
+  /* border: 1px solid; */
+}
+.item-price {
+  flex-basis: 15%;
+  padding: 0.5rem;
+  /* border: 1px solid; */
+}
+.item-total {
+  flex-basis: 15%;
+  padding: 0.5rem;
+  /* border: 1px solid; */
 }
