@@ -13,11 +13,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* SECTION ------------ */
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* LOGO ------------ */
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 2rem;
 }
 
 .logo__image {
@@ -30,4 +37,36 @@ body {
   opacity: 0.75;
   font-size: 3.4rem;
   font-weight: 300;
+}
+
+/* STATS SECTION ------------ */
+.stats-section {
+  background-image: url("img/shopping-stats-bg.svg");
+  height: 12rem;
+  background-position: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.stats__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.stats__label {
+  font-size: 1.8rem;
+}
+
+.stats__value {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.stats__value span {
+  font-size: 1.87rem;
 }
