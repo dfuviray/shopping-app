@@ -11,6 +11,7 @@ body {
   font-size: 10px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow: hidden;
 }
 
 /* SECTION ------------ */
@@ -32,8 +33,8 @@ h5 {
 
 /* BUTTON ------------ */
 button {
-  font-size: 1.2rem;
-  padding: 0.4rem 0.7rem;
+  font-size: 1.4rem;
+  padding: 0.7rem 0.7rem;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.45);
   color: rgba(0, 0, 0, 0.65);
@@ -44,6 +45,42 @@ button {
 
 button:active {
   transform: translateY(3px);
+}
+
+/* LABEL ------------ */
+label {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* TEXT ------------ */
+input[type="text"],
+input[type="number"] {
+  font-size: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  outline: none;
+  transition: border 0.2s, color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="number"]:focus,
+input[type="number"]:hover {
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.85);
+}
+/* LINK ------------ */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #be2edd;
+}
+
+a:hover,
+a:active {
+  color: #be2edd;
 }
 
 /* LOGO ------------ */
@@ -136,6 +173,7 @@ button:active {
 .items {
   background-color: #fff;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .items ul {
@@ -158,6 +196,18 @@ button:active {
   color: rgba(190, 46, 221, 0.85);
 }
 
+.items ul li a {
+  overflow: hidden;
+  position: relative;
+  right: -10%;
+  transition: right 0.2s;
+}
+
+.items ul li:hover a {
+  position: relative;
+  right: 1%;
+}
+
 .item-description {
   flex-basis: 55%;
   padding: 0.5rem;
@@ -165,12 +215,12 @@ button:active {
 }
 
 .item-quantity {
-  flex-basis: 15%;
+  flex-basis: 14%;
   padding: 0.5rem;
   /* border: 1px solid; */
 }
 .item-price {
-  flex-basis: 15%;
+  flex-basis: 14%;
   padding: 0.5rem;
   /* border: 1px solid; */
 }
@@ -178,4 +228,118 @@ button:active {
   flex-basis: 15%;
   padding: 0.5rem;
   /* border: 1px solid; */
+}
+
+.item-remove {
+  flex-basis: 2%;
+  padding: 0.3rem 1.5rem;
+}
+
+/* SHOPPING FORM SECTION ------------ */
+
+.shopping-form {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  transition: left 0.1s, background-color 1s;
+}
+.shopping-form__container {
+  position: relative;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  background: #fff;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.shopping-form__open {
+  display: block;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close__button {
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.shopping-form__header {
+  background-image: url("img/shopping-stats-bg.svg");
+  min-height: 20%;
+  min-width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.shopping-form__header-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.form-group__item-label {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+
+.form-group__item-text,
+.form-group__item-number {
+  margin-bottom: 1.5rem;
+  min-width: 100%;
+}
+
+.form-group__button {
+  width: 100%;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #be2edd;
+  border-color: #be2edd;
+  transition: background-color 0.4s, border-color 0.4s, transform 0.4s;
+}
+
+.form-group__button:hover {
+  background-color: #9807b8;
+}
+
+.form-group__button:active {
+  transform: translateY(3px);
+  background-color: #8800a6;
 }
