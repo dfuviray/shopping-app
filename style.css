@@ -91,6 +91,12 @@ a:active {
   margin: 2rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .logo {
+    justify-content: center;
+  }
+}
+
 .logo__image {
   height: 7rem;
   width: auto;
@@ -113,16 +119,35 @@ a:active {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .stats-section {
+    height: 8rem;
+  }
+}
+
 .stats {
   display: flex;
   justify-content: flex-end;
   color: #fff;
 }
+
+@media only screen and (max-width: 700px) {
+  .stats {
+    justify-content: center;
+  }
+}
+
 .stats__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .stats__content {
+    padding: 1rem;
+  }
 }
 
 .stats__label {
@@ -133,6 +158,12 @@ a:active {
   font-size: 5rem;
   font-weight: 300;
   color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .stats__value {
+    font-size: 3rem;
+  }
 }
 
 .stats__value span {
@@ -155,6 +186,18 @@ a:active {
   bottom: 0.4rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .shopping-item__button {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .shopping-item__button {
+    font-size: 1rem;
+  }
+}
+
 .shopping-item__button:hover {
   background-color: #9807b8;
 }
@@ -167,6 +210,12 @@ a:active {
   font-size: 3.1rem;
   font-weight: 300;
   margin-right: 2rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .shopping-item__title {
+    font-size: 2.5rem;
+  }
 }
 
 /* SHOPPING ITEMS ------------ */
@@ -294,6 +343,18 @@ a:active {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 700px) {
+  .shopping-form__header-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .shopping-form__header-title {
+    font-size: 1.5rem;
+  }
+}
+
 form {
   width: 100%;
 }
@@ -305,6 +366,12 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .form-group {
+    width: 75%;
+  }
 }
 
 .form-group__item {
