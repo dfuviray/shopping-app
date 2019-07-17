@@ -113,7 +113,7 @@ a:active {
 .stats-section {
   max-width: 100%;
   padding: 0 7%;
-  background-image: url("img/shopping-stats-bg.svg");
+  background-image: url("../img/shopping-stats-bg.svg");
   height: 12rem;
   background-position: center;
   margin-bottom: 2rem;
