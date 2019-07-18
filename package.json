@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dfuviray/shopping-app#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.5.4",
+    "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "webpack-dev-server": "^3.7.2"
   }
