@@ -22,14 +22,14 @@
     </header>
     <section class="stats-section">
       <div class="stats">
-        <div class="stats__content stats__total">
+        <div class="stats__content">
           <p class="stats__label">Total</p>
-          <h2 class="stats__value"><span>$</span>185.00</h2>
+          <h2 class="stats__value stats__total"><span>$</span>0.00</h2>
         </div>
 
-        <div class="stats__content stats__quantity">
+        <div class="stats__content ">
           <p class="stats__label">Total Quantity</p>
-          <h2 class="stats__value">10</h2>
+          <h2 class="stats__value stats__quantity">0</h2>
         </div>
       </div>
     </section>
@@ -95,35 +95,36 @@
         <div class="form-group">
           <form class="addForm">
             <div class="form-group__item">
-              <label class="form-group__item-label" for="form-group__item-label"
+              <label class="form-group__item-label" for="input__description"
                 >Description</label
               >
               <input
                 type="text"
-                class="form-group__item-text input__description"
-                id="form-group__item-label"
+                class="form-group__item-text input__description input-field"
+                id="input__description"
                 placeholder="Enter Description"
               />
             </div>
             <div class="form-group__item">
-              <label class="form-group__item-label" for="form-group__item-label"
+              <label class="form-group__item-label" for="input__price"
                 >Price</label
               >
               <input
                 type="number"
-                class="form-group__item-number input__price"
-                id="form-group__item-label"
+                class="form-group__item-number input__price input-field"
+                id="input__price"
                 placeholder="Enter Price"
+                step="0.1"
               />
             </div>
             <div class="form-group__item">
-              <label class="form-group__item-label" for="form-group__item-label"
+              <label class="form-group__item-label" for="input_quantity"
                 >Quantity</label
               >
               <input
                 type="number"
-                class="form-group__item-number input_quantity"
-                id="form-group__item-label"
+                class="form-group__item-number input_quantity input-field"
+                id="input_quantity"
                 placeholder="Enter Quantity"
               />
             </div>

@@ -21,4 +21,24 @@ export default class List {
     this.items.push(item);
     return item;
   }
+
+  removeItem(id) {
+    const index = this.items.findIndex(item => item.id === id);
+    this.items.splice(index, 1);
+  }
+
+  getSumtotal() {
+    const sum = this.items.reduce((accumulator, current) => {
+      return accumulator + current.price * current.quantity;
+    }, 0);
+
+    return parseFloat(sum).toFixed(2);
+  }
+
+  getTotalQuantity() {
+    return this.items.reduce(
+      (accumulator, current) => accumulator + parseInt(current.quantity),
+      0
+    );
+  }
 }

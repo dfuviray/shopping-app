@@ -6,5 +6,8 @@ export const elements = {
   inputDescription: document.querySelector(".input__description"),
   inputPrice: document.querySelector(".input__price"),
   inputQuantity: document.querySelector(".input_quantity"),
-  tableList: document.querySelector(".items ul")
+  allInput: document.querySelectorAll(".input-field"),
+  tableList: document.querySelector(".items ul"),
+  total: document.querySelector(".stats__total"),
+  quantity: document.querySelector(".stats__quantity")
 };
