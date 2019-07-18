@@ -10,7 +10,7 @@ export const renderItem = item => {
             <p class="item-price">${item.price}</p>
             <p class="item-quantity">${item.quantity}</p>
             <p class="item-total">${item.price * item.quantity}</p>
-            <button class="item-remove" data-id="${item.id}">x</button>
+            <button class="item-remove btn-text" data-id="${item.id}">x</button>
         </div>
     </li>
     `;

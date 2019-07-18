@@ -47,6 +47,10 @@ button:active {
   transform: translateY(3px);
 }
 
+.btn-text {
+  border: transparent;
+}
+
 /* LABEL ------------ */
 label {
   font-size: 1.6rem;
