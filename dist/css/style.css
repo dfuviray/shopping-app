@@ -49,6 +49,7 @@ button:active {
 
 .btn-text {
   border: transparent;
+  color: rgba(190, 46, 221, 0.85);
 }
 
 /* LABEL ------------ */
