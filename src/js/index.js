@@ -1,11 +1,13 @@
 import List from "./models/listModel";
 import { elements } from "./views/base";
+import { isAllInputsEmpty } from "./views/utilities";
 import {
   renderItem,
   renderSumTotal,
   renderTotalQuantity,
   clearInputs,
-  removeItem
+  removeItem,
+  renderError
 } from "./views/listView";
 
 const list = new List();
@@ -32,6 +34,12 @@ elements.addForm.addEventListener("submit", e => {
     price: elements.inputPrice,
     quantity: elements.inputQuantity
   };
+  const isAllInputsEmpty = !(
+    elements.inputDescription.value.trim().length > 0 &&
+    elements.inputPrice.value > 0 &&
+    elements.inputQuantity.value > 0
+  );
+  if (isAllInputsEmpty) return;
 
   const item = list.addItem(inputFields);
   renderItem(item);
@@ -47,4 +55,10 @@ elements.tableList.addEventListener("click", e => {
     removeItem(id);
     renderStats();
   }
+});
+
+elements.allInput.forEach(input => {
+  input.addEventListener("keyup", e => renderError(e));
+  input.addEventListener("change", e => renderError(e));
+  input.addEventListener("click", e => renderError(e));
 });

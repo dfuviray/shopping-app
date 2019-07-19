@@ -394,7 +394,6 @@ form {
 
 .form-group__item-text,
 .form-group__item-number {
-  margin-bottom: 1.5rem;
   min-width: 100%;
 }
 
@@ -414,4 +413,11 @@ form {
 .form-group__button:active {
   transform: translateY(3px);
   background-color: #8800a6;
+}
+
+.error {
+  font-size: 1.4rem;
+  color: red;
+  padding: 0;
+  margin-bottom: 1.25rem;
 }
